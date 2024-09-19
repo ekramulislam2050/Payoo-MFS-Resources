@@ -3,5 +3,14 @@ const loginButton = document.getElementById("btn-login");
     e.preventDefault();
     const numberField = document.getElementById("number-field");
     const numberFieldValue = numberField.value ;
-    console.log(numberFieldValue)
+    const passwordField = document.getElementById("password-field");
+    const passwordFieldValue = passwordField.value ;
+    if(numberFieldValue === '0' && passwordFieldValue === '9'){
+      window.location.href='/index2.html';
+      console.log(numberFieldValue,passwordFieldValue)
+    }
+    else{
+      alert("wrong input")
+    }
+    
  })

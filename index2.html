@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- cdn tailwind and daisy -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- fave-icon------ -->
+      <link rel="icon" href="./style/fave-icon/income.png" type="image/x-icon">
+    <title>mfs-home-page</title>
+</head>
+<body>
+   <main class="flex justify-center my-5">
+    <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-2">
+              <!-- display balance -->
+              <div class="shadow stats">
+                <div class="stat">
+                  <div class="stat-value">89,400</div>
+                  <div class="stat-desc">Available balance</div>
+                </div>
+              </div>
+              <!-- divider---------- -->
+              <div class="divider"></div>
+              <!-- add or cash out money -->
+              <div>
+                <button class="btn btn-lg">Add money</button>
+                <button class="btn btn-lg">Cash out</button>
+              </div>
+                  <!-- divider---------- -->
+                  <div class="divider"></div>
+              <!-- amount input---------- -->
+              <div class="max-w-sm shadow-2xl  card bg-base-100">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Money amount</span>
+                    </label>
+                    <input type="text" placeholder="input amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Input pin</span>
+                    </label>
+                    <input type="password" placeholder="input pin" class="input input-bordered" required />
+                    
+                  </div>
+                  <div class="mt-6 form-control">
+                    <button class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+   </main>
+
+   <script src="./js/index2.js"></script>
+</body>
+</html>
