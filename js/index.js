@@ -6,7 +6,7 @@ const loginButton = document.getElementById("btn-login");
     const passwordField = document.getElementById("password-field");
     const passwordFieldValue = passwordField.value ;
     if(numberFieldValue === '0' && passwordFieldValue === '9'){
-      window.location.href='index2.html';
+      window.location.href='./js/index2.js';
       console.log(numberFieldValue,passwordFieldValue)
     }
     else{
