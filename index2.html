@@ -19,7 +19,7 @@
               <!-- display balance -->
               <div class="shadow stats">
                 <div class="stat">
-                  <div class="stat-value">89,400</div>
+                  <div class="stat-value" id="display-balance">9400</div>
                   <div class="stat-desc">Available balance</div>
                 </div>
               </div>
@@ -32,32 +32,56 @@
               </div>
                   <!-- divider---------- -->
                   <div class="divider"></div>
-              <!-- amount input---------- -->
-              <div class="max-w-sm shadow-2xl  card bg-base-100">
+              <!-- add money start---------- -->
+              <div class="hidden max-w-sm shadow-2xl card bg-base-100">
                 <form class="card-body">
                   <div class="form-control">
                     <label class="label">
-                      <span class="label-text">Money amount</span>
+                      <span class="label-text">Amount of money</span>
                     </label>
-                    <input type="text" placeholder="input amount" class="input input-bordered" required />
+                    <input type="text" id="money-field" placeholder="input amount" class="input input-bordered" required />
                   </div>
                   <div class="form-control">
                     <label class="label">
                       <span class="label-text">Input pin</span>
                     </label>
-                    <input type="password" placeholder="input pin" class="input input-bordered" required />
+                    <input type="password" id='password-field' placeholder="input pin" class="input input-bordered" required />
                     
                   </div>
                   <div class="mt-6 form-control">
-                    <button class="btn btn-primary">Login</button>
+                    <button id="add-money-btn" class="btn btn-primary">add money</button>
                   </div>
                 </form>
               </div>
+                <!-- add money end---------- -->
+                 <!-- cash out start -- -->
+                 <div class="max-w-sm shadow-2xl card bg-base-100">
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Amount of money</span>
+                      </label>
+                      <input type="text" id="cash-out-field" placeholder="input amount" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Input pin</span>
+                      </label>
+                      <input type="password" id='cash-out-password' placeholder="input pin" class="input input-bordered" required />
+                      
+                    </div>
+                    <div class="mt-6 form-control">
+                      <button id="cash-out-btn" class="btn btn-primary">Cash out</button>
+                    </div>
+                  </form>
+                </div>
+                 <!-- cash out end -- -->
           </div>
         </div>
       </div>
    </main>
 
    <script src="./js/index2.js"></script>
+   <script src="./js/utilities.js"></script>
 </body>
 </html>
