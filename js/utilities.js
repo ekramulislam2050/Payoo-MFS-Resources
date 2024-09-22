@@ -9,3 +9,11 @@ function displayAmount(id){
     const convertToNumber = parseFloat(textOfDisplayBtn);
     return convertToNumber
 }
+
+function showForm (id){
+    document.getElementById("add-money-form").classList.add("hidden")
+    document.getElementById("cash-out-form").classList.add("hidden")
+    document.getElementById("transaction-history").classList.add("hidden")
+    document.getElementById(id).classList.remove("hidden")
+}
+ 
